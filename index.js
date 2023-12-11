@@ -5,6 +5,7 @@ const port=3000;
 app.get('/',(req,res)=>{
   res.send('Hola mi server en express');
 });
+app.use(express.json());
 app.get('/nueva-ruta',(req,res)=>{
   res.send('Hola, soy una nueva ruta');
 });
